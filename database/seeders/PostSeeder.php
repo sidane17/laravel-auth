@@ -17,7 +17,7 @@ class PostSeeder extends Seeder
     public function run(Faker $faker): void
     {
         $url = 'https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg';
-        for ($i = 0; $i < 12; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $post = new Post();
             $post->project_title = $faker->name;
             $post->description = $faker->text;

@@ -44,6 +44,9 @@
 
                 </div>
             @endforeach
+
+                {{ $posts->links('pagination::bootstrap-5')}}
+
         </div>
     </div>
 @endSection
