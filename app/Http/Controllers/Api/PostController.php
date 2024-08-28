@@ -20,7 +20,7 @@ class PostController extends Controller
     {
         return response()->json([
             'success' => true,
-            'post' => Post::with('type', 'language')->orderByDesc('id')->take(3)->get()
+            'post' => Post::with('type', 'languages')->orderByDesc('id')->take(3)->get()
         ]);
     }
 
